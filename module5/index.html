@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Sign Up</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body ng-app="restaurant">
+  <div>
+    <nav>
+      <ul>
+        <li><a href="#!signup">Sign Up</a></li>
+        <li><a href="#!myinfo">My Info</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- ngView directive to load views -->
+  <div ng-view></div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular-route.min.js"></script>
+  <script src="src/js/app.js"></script>
+  <script src="src/signup/signup.controller.js"></script>
+  <script src="src/myinfo/myinfo.controller.js"></script>
+  <script src="src/common/menu.service.js"></script>
+</body>
+</html>
